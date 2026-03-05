@@ -1,0 +1,43 @@
+{
+  "font": {
+    "family": {
+      "heading": { "value": "'Inter', sans-serif", "comment": "Heading font" },
+      "body": { "value": "'Inter', sans-serif", "comment": "Body font" },
+      "mono": { "value": "'JetBrains Mono', monospace", "comment": "Code font" }
+    },
+    "weight": {
+      "regular": { "value": "400" },
+      "medium": { "value": "500" },
+      "semibold": { "value": "600" },
+      "bold": { "value": "700" }
+    },
+    "size": {
+      "xs": { "value": "0.75rem", "comment": "12px" },
+      "sm": { "value": "0.875rem", "comment": "14px" },
+      "base": { "value": "1rem", "comment": "16px" },
+      "lg": { "value": "1.125rem", "comment": "18px" },
+      "xl": { "value": "1.25rem", "comment": "20px" },
+      "2xl": { "value": "1.5rem", "comment": "24px" },
+      "3xl": { "value": "2rem", "comment": "32px" },
+      "4xl": { "value": "2.5rem", "comment": "40px" },
+      "5xl": { "value": "3.5rem", "comment": "56px" },
+      "6xl": { "value": "5rem", "comment": "80px" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.1", "comment": "Headings" },
+      "snug": { "value": "1.3" },
+      "normal": { "value": "1.5" },
+      "relaxed": { "value": "1.6", "comment": "Body text" }
+    },
+    "letterSpacing": {
+      "tighter": { "value": "-0.04em", "comment": "Bold headings" },
+      "tight": { "value": "-0.02em", "comment": "Subheadings" },
+      "normal": { "value": "0" },
+      "wide": { "value": "0.05em", "comment": "Labels, uppercase small" },
+      "wider": { "value": "0.1em", "comment": "All-caps UI text" }
+    }
+  },
+  "heading": {
+    "textTransform": { "value": "uppercase", "comment": "Marathon-style uppercase headings" }
+  }
+}

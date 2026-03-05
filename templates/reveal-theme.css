@@ -1,0 +1,117 @@
+/**
+ * @kiharagaku/design-system — Reveal.js Theme
+ * Dark × Neon × Sharp × Industrial
+ *
+ * Usage:
+ *   import '@kiharagaku/design-system/reveal-theme'
+ *   or link in HTML: <link rel="stylesheet" href="reveal-theme.css">
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --r-background-color: #000000;
+  --r-main-font: 'Inter', sans-serif;
+  --r-main-font-size: 28px;
+  --r-main-color: #FFFFFF;
+  --r-heading-font: 'Inter', sans-serif;
+  --r-heading-color: #FFFFFF;
+  --r-heading-letter-spacing: -0.04em;
+  --r-heading-text-transform: uppercase;
+  --r-heading-font-weight: 700;
+  --r-heading-line-height: 1.1;
+  --r-link-color: #C0FE04;
+  --r-link-color-hover: #D4FF4D;
+  --r-selection-background-color: rgba(192, 254, 4, 0.3);
+  --r-selection-color: #FFFFFF;
+}
+
+.reveal {
+  background-color: var(--r-background-color);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  font-weight: var(--r-heading-font-weight);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  line-height: var(--r-heading-line-height);
+  margin-bottom: 0.5em;
+}
+
+.reveal h1 { font-size: 3.5rem; }
+.reveal h2 { font-size: 2.5rem; }
+.reveal h3 { font-size: 2rem; }
+.reveal h4 { font-size: 1.5rem; }
+
+.reveal p,
+.reveal li {
+  color: var(--r-main-color);
+  font-family: var(--r-main-font);
+  line-height: 1.6;
+}
+
+.reveal .text-muted {
+  color: #999999;
+}
+
+/* Accent highlight */
+.reveal .accent {
+  color: #C0FE04;
+}
+
+.reveal strong,
+.reveal b {
+  color: #C0FE04;
+  font-weight: 700;
+}
+
+/* Border / divider */
+.reveal hr {
+  border: none;
+  border-top: 1px solid #1C1C1C;
+  margin: 2rem 0;
+}
+
+/* Code blocks */
+.reveal pre {
+  background: #1C1C1C;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+.reveal code {
+  font-family: 'JetBrains Mono', monospace;
+  color: #C0FE04;
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  color: #999999;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+}
+
+/* Neon glow effect for emphasis */
+.reveal .glow {
+  text-shadow: 0 0 20px rgba(192, 254, 4, 0.4);
+}
+
+/* Industrial stripe accent bar */
+.reveal .stripe-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #C0FE04,
+    #C0FE04 10px,
+    #000000 10px,
+    #000000 20px
+  );
+  height: 4px;
+  width: 100%;
+  margin: 1.5rem 0;
+}

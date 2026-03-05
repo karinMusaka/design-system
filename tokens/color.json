@@ -1,0 +1,22 @@
+{
+  "color": {
+    "background": { "value": "#000000", "comment": "Pure black base" },
+    "surface": { "value": "#222222", "comment": "Card/panel background" },
+    "surface-alt": { "value": "#1C1C1C", "comment": "Subtle surface variation" },
+    "text": { "value": "#FFFFFF", "comment": "Primary text" },
+    "text-muted": { "value": "#999999", "comment": "Secondary/disabled text" },
+    "text-dim": { "value": "#666666", "comment": "Tertiary text" },
+    "accent": { "value": "#C0FE04", "comment": "Neon lime — primary accent" },
+    "accent-hover": { "value": "#D4FF4D", "comment": "Accent hover state" },
+    "accent-dim": { "value": "#6B8F02", "comment": "Accent muted/bg usage" },
+    "warning": { "value": "#FF5500", "comment": "Orange — alerts/CTA" },
+    "warning-hover": { "value": "#FF7733", "comment": "Warning hover state" },
+    "info": { "value": "#3860BE", "comment": "Blue — informational" },
+    "info-hover": { "value": "#4A75D6", "comment": "Info hover state" },
+    "success": { "value": "#00CC66", "comment": "Green — success states" },
+    "error": { "value": "#FF3333", "comment": "Red — error states" },
+    "border": { "value": "#1C1C1C", "comment": "Default border" },
+    "border-accent": { "value": "#C0FE04", "comment": "Highlighted border" },
+    "border-muted": { "value": "#333333", "comment": "Subtle border" }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@karinMusaka/design-system",
+  "version": "0.1.0",
+  "description": "Shared design tokens — Dark × Neon × Sharp × Industrial",
+  "main": "build/js/tokens.js",
+  "types": "build/js/tokens.d.ts",
+  "exports": {
+    ".": "./build/js/tokens.js",
+    "./css": "./build/css/variables.css",
+    "./tailwind": "./build/tailwind/preset.js",
+    "./reveal-theme": "./templates/reveal-theme.css",
+    "./react-pdf": "./templates/react-pdf-theme.js"
+  },
+  "scripts": {
+    "build": "style-dictionary build",
+    "clean": "rm -rf build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karinMusaka/design-system.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  },
+  "license": "MIT"
+}
