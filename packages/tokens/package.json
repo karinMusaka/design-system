@@ -1,0 +1,30 @@
+{
+  "name": "@karinMusaka/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens — Dark × Neon × Sharp × Industrial",
+  "main": "./build/js/tokens.js",
+  "types": "./build/js/tokens.d.ts",
+  "exports": {
+    ".": "./build/js/tokens.js",
+    "./css": "./build/css/variables.css",
+    "./tailwind": "./tailwind-preset.cjs",
+    "./tokens-source": "./tokens/"
+  },
+  "files": [
+    "build",
+    "tokens",
+    "tailwind-preset.cjs",
+    "config.json"
+  ],
+  "scripts": {
+    "build": "style-dictionary build",
+    "clean": "rm -rf build"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.0.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

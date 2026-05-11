@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>Mission Briefing — Reveal sample</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css" />
+  <link rel="stylesheet" href="../../packages/presets/reveal/theme.css" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Mission <strong>Briefing</strong></h1>
+        <p class="text-muted">Operative — 木原 学</p>
+        <div class="stripe-bar"></div>
+      </section>
+
+      <section>
+        <h2>Status: <span class="accent">Operational</span></h2>
+        <ul>
+          <li>All systems nominal</li>
+          <li>Awaiting deployment authorization</li>
+          <li>ETA: <strong>T-minus 24h</strong></li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Code</h3>
+        <pre><code>def engage(target: str) -> bool:
+    print(f"engaging {target}…")
+    return True</code></pre>
+      </section>
+
+      <section>
+        <h1 class="glow"><strong>GO</strong> for Launch.</h1>
+      </section>
+    </div>
+  </div>
+
+  <script type="module">
+    import Reveal from "https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.esm.js";
+    new Reveal().initialize({ hash: true, controls: true });
+  </script>
+</body>
+</html>

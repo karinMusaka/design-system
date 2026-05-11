@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 32" width="240" height="32">
+  <style>
+    .wm { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; }
+    .accent { fill: #C0FE04; }
+    .base { fill: #FFFFFF; }
+  </style>
+  <rect width="240" height="32" fill="#000000"/>
+  <text x="12" y="22" class="wm base">KARIN<tspan class="accent">MUSAKA</tspan></text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "name": "@karinMusaka/design-system",
+  "version": "0.1.0",
+  "description": "Compatibility meta-package re-exporting tokens and presets",
+  "exports": {
+    ".": "./dist/js/tokens.js",
+    "./css": "./dist/css/variables.css",
+    "./tailwind": "./dist/tailwind/preset.cjs",
+    "./reveal-theme": "./dist/reveal-theme.css",
+    "./react-pdf": "./dist/react-pdf.js"
+  },
+  "main": "./dist/js/tokens.js",
+  "types": "./dist/js/tokens.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepublishOnly": "pnpm build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@karinMusaka/tokens": "workspace:*",
+    "@karinMusaka/presets": "workspace:*"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -1,0 +1,61 @@
+/**
+ * @karinMusaka/presets/slidev — Style overrides
+ * Dark × Neon × Sharp × Industrial
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --slidev-theme-primary: #C0FE04;
+  --slidev-theme-background: #000000;
+  --slidev-theme-surface: #1C1C1C;
+  --slidev-theme-text: #FFFFFF;
+  --slidev-theme-muted: #999999;
+}
+
+.slidev-layout {
+  background: #000000;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.slidev-layout h1 { font-size: 3.5rem; }
+.slidev-layout h2 { font-size: 2.5rem; }
+.slidev-layout h3 { font-size: 2rem; }
+
+.slidev-layout a {
+  color: #C0FE04;
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  color: #C0FE04;
+}
+
+.slidev-layout code {
+  font-family: 'JetBrains Mono', monospace;
+  color: #C0FE04;
+}
+
+.slidev-layout pre {
+  background: #1C1C1C;
+  border: 1px solid #333333;
+  border-radius: 2px;
+}
+
+.slidev-layout blockquote {
+  border-left: 4px solid #C0FE04;
+  color: #999999;
+}

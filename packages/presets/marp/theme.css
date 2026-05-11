@@ -1,0 +1,149 @@
+/* @theme karinmusaka-dark
+ * @karinMusaka/presets — Marp Theme
+ * Dark × Neon × Sharp × Industrial
+ *
+ * Usage:
+ *   ---
+ *   marp: true
+ *   theme: karinmusaka-dark
+ *   ---
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+section {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+  padding: 64px;
+}
+
+section h1,
+section h2,
+section h3,
+section h4 {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+section h1 { font-size: 3.5rem; }
+section h2 { font-size: 2.5rem; }
+section h3 { font-size: 2rem; }
+section h4 { font-size: 1.5rem; letter-spacing: -0.02em; }
+
+section a {
+  color: #C0FE04;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #D4FF4D;
+}
+
+section strong,
+section b {
+  color: #C0FE04;
+  font-weight: 700;
+}
+
+section em,
+section i {
+  color: #999999;
+  font-style: normal;
+}
+
+section hr {
+  border: none;
+  border-top: 1px solid #1C1C1C;
+  margin: 2rem 0;
+}
+
+section pre {
+  background: #1C1C1C;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8em;
+}
+
+section code {
+  font-family: 'JetBrains Mono', monospace;
+  color: #C0FE04;
+}
+
+section blockquote {
+  border-left: 4px solid #C0FE04;
+  color: #999999;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+section table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+section th,
+section td {
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+section th {
+  background: #1C1C1C;
+  color: #C0FE04;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85em;
+}
+
+section::after {
+  color: #999999;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6em;
+}
+
+/* Industrial stripe accent bar */
+section .stripe-bar {
+  background: repeating-linear-gradient(
+    -45deg,
+    #C0FE04,
+    #C0FE04 10px,
+    #000000 10px,
+    #000000 20px
+  );
+  height: 4px;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+section .glow {
+  text-shadow: 0 0 20px rgba(192, 254, 4, 0.4);
+}
+
+section .accent {
+  color: #C0FE04;
+}
+
+section .muted {
+  color: #999999;
+}
+
+/* Title slide variant */
+section.title {
+  text-align: center;
+  justify-content: center;
+}
+
+section.title h1 {
+  font-size: 5rem;
+}

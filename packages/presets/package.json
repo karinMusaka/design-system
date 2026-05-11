@@ -1,0 +1,21 @@
+{
+  "name": "@karinMusaka/presets",
+  "version": "0.1.0",
+  "description": "Presentation/PDF themes — Dark × Neon × Sharp × Industrial",
+  "exports": {
+    "./reveal": "./reveal/theme.css",
+    "./react-pdf": "./react-pdf/theme.js",
+    "./marp": "./marp/theme.css",
+    "./slidev": "./slidev/index.ts"
+  },
+  "files": [
+    "reveal",
+    "react-pdf",
+    "marp",
+    "slidev"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

@@ -1,1 +1,10 @@
 node_modules/
+**/node_modules/
+**/build/
+**/dist/
+**/storybook-static/
+.DS_Store
+**/.DS_Store
+pnpm-debug.log*
+*.tsbuildinfo
+.turbo/

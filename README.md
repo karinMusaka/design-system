@@ -1,92 +1,45 @@
-# @kiharagaku/design-system
+# design-system
 
-**Dark × Neon × Sharp × Industrial** — 全プロジェクト共通のデザイントークン。
+**Dark × Neon × Sharp × Industrial** — デザイン制作の総合スペース。
 
-Marathon (Bungie) にインスパイアされたビジュアルテイスト：
-- 純黒ベース + ネオンライム (`#C0FE04`) アクセント
-- シャープな角丸 (2px)
-- uppercase 見出し + タイトなレタースペーシング
-- インダストリアルなボーダー表現
+Marathon (Bungie) インスパイアのビジュアル基盤と、プレゼン・PDF・コンポーネント・アセット・リサーチを一カ所に集約する pnpm workspaces モノレポ。
+
+## 構成
+
+```
+design-system/
+├── packages/
+│   ├── tokens/        @karinMusaka/tokens         デザイントークン
+│   ├── components/    @karinMusaka/components     React + Tailwind コンポーネント
+│   ├── presets/       @karinMusaka/presets        Reveal/Marp/Slidev/React-PDF テーマ
+│   ├── assets/        @karinMusaka/assets         フォント/アイコン/ロゴ/Lottie
+│   └── meta/          @karinMusaka/design-system  互換 meta-package
+├── apps/
+│   └── storybook/                                  コンポーネントプレビュー
+├── studio/                                          このリポジトリ内の実制作物
+│   ├── decks/                                       Reveal/Marp/Slidev のスライド
+│   ├── pdfs/                                        React-PDF 出力
+│   └── mockups/                                     UI モック
+└── docs/                                            リサーチ・意思決定ログ
+    ├── research/                                    design-research 出力先
+    ├── moodboards/                                  参考画像
+    └── decisions/                                   ADR（採用根拠）
+```
 
 ## クイックスタート
 
-### 1. インストール
-
 ```bash
-# ローカルリンク（monorepo外の場合）
-cd design-system && npm link
-cd your-project && npm link @kiharagaku/design-system
+pnpm install
+pnpm -F @karinMusaka/tokens build
+pnpm -F @karinMusaka/design-system build   # 互換 meta-package を作る場合
 ```
 
-### 2. Tailwind CSS で使う
+## 各パッケージの README
 
-```ts
-// tailwind.config.ts
-import preset from '@kiharagaku/design-system/tailwind'
-
-export default {
-  presets: [preset],
-  content: ['./src/**/*.{ts,tsx}'],
-}
-```
-
-これだけで `bg-background`, `text-accent`, `border-border`, `rounded-sm` 等がトークンの値で使えます。
-
-### 3. CSS変数として使う
-
-```css
-@import '@kiharagaku/design-system/css';
-
-body {
-  background: var(--color-background);
-  color: var(--color-text);
-}
-```
-
-### 4. JavaScript/TypeScript から使う
-
-```ts
-import { ColorAccent, ColorBackground, FontSizeXl } from '@kiharagaku/design-system'
-```
-
-### 5. Reveal.js スライドで使う
-
-```js
-import '@kiharagaku/design-system/reveal-theme'
-```
-
-### 6. React-PDF で使う
-
-```tsx
-import { styles, colors } from '@kiharagaku/design-system/react-pdf'
-
-<Page style={styles.page}>
-  <Text style={styles.h1}>タイトル</Text>
-  <Text style={styles.accent}>強調テキスト</Text>
-</Page>
-```
-
-## トークン構造
-
-```
-tokens/
-├── color.json       — カラーパレット (18色)
-├── typography.json   — フォント・サイズ・行間・字間
-├── spacing.json      — 余白・角丸・影・ボーダー
-└── animation.json    — デュレーション・イージング
-```
-
-## ビルド
-
-```bash
-npm run build    # tokens/ → build/ に変換
-```
-
-出力:
-- `build/css/variables.css` — CSS変数
-- `build/tailwind/preset.js` — Tailwindプリセット
-- `build/js/tokens.js` — ES6定数
-- `build/js/tokens.d.ts` — TypeScript型定義
+- [packages/tokens/README.md](packages/tokens/README.md)
+- [packages/presets/README.md](packages/presets/README.md)
+- [packages/components/README.md](packages/components/README.md) *(Phase 2 で作成)*
+- [packages/assets/README.md](packages/assets/README.md) *(Phase 4 で作成)*
 
 ## カラーパレット
 

@@ -1,0 +1,24 @@
+{
+  "name": "@karinMusaka/slidev-theme-karinmusaka",
+  "version": "0.1.0",
+  "description": "Slidev theme — Dark × Neon × Sharp × Industrial",
+  "type": "module",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "styles"
+  ],
+  "keywords": [
+    "slidev-theme"
+  ],
+  "slidev": {
+    "colorSchema": "dark",
+    "defaults": {
+      "fonts": {
+        "sans": "Inter",
+        "mono": "JetBrains Mono"
+      }
+    }
+  },
+  "license": "MIT"
+}
